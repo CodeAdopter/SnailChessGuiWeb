@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snail Chess GUI</title>
+<meta name="description" content="A free, open-source chess app for Windows. Analyse with any engine, play rated games, run engine tournaments, in 2D or 3D.">
+<meta name="theme-color" content="#EEF0E3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#142019" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Snail Chess GUI">
+<meta property="og:description" content="A free, open-source chess app for Windows, with engine analysis, rated games, engine tournaments and 3D boards.">
+<meta property="og:image" content="/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+<link rel="icon" href="/img/icon.png" type="image/png" sizes="256x256">
+<link rel="apple-touch-icon" href="/img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+<link rel="preload" as="image" href="/img/shots/3d-library-1400.webp" imagesrcset="/img/shots/3d-library-800.webp 800w, /img/shots/3d-library-1400.webp 1400w, /img/shots/3d-library-2400.webp 2400w" imagesizes="(min-width: 1320px) 1240px, 94vw">
+</head>
+<body>
+<a class="skip" href="#analysis">Skip to the features</a>
+
+<header class="bar">
+  <a class="brand" href="#top" aria-label="Snail Chess GUI, back to top">
+    <svg class="brand-mark" viewBox="0 0 23.6 23.6" aria-hidden="true"><path d="M11.3 12.97 C11.3 11.57 12.6 10.77 13.7 11.37 C15.3 12.17 15.3 14.67 13.7 15.87 C11.6 17.37 8.5 16.47 7.6 13.97 C6.5 10.87 8.7 7.67 12 7.27 C16.1 6.77 19.4 10.17 19.2 14.17 C19 18.77 14.8 22.07 10.2 21.57 C5.1 21.07 1.3 17.07 1.3 12.27 C1.3 6.57 5.9 1.97 11.6 1.97 C17.5 1.97 22.3 6.87 22.3 12.87"/></svg>
+    <span>Snail Chess</span>
+  </a>
+  <nav class="bar-links" aria-label="Sections">
+    <a href="#analysis">Analysis</a>
+    <a href="#looks">Looks</a>
+    <a href="#three-d">3D</a>
+    <a href="#play">Play</a>
+    <a href="#engine-room">Engines</a>
+    <a href="#gallery">Screenshots</a>
+  </nav>
+  <a class="btn btn-small" href="#download">Download</a>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="hero-head">
+    <h1 class="hero-title">Set the board anywhere.</h1>
+    <svg class="hero-spiral" viewBox="0 0 23.6 23.6" aria-hidden="true"><path pathLength="1" d="M11.3 12.97 C11.3 11.57 12.6 10.77 13.7 11.37 C15.3 12.17 15.3 14.67 13.7 15.87 C11.6 17.37 8.5 16.47 7.6 13.97 C6.5 10.87 8.7 7.67 12 7.27 C16.1 6.77 19.4 10.17 19.2 14.17 C19 18.77 14.8 22.07 10.2 21.57 C5.1 21.07 1.3 17.07 1.3 12.27 C1.3 6.57 5.9 1.97 11.6 1.97 C17.5 1.97 22.3 6.87 22.3 12.87"/></svg>
+    <div class="hero-copy">
+      <p class="lead">A free, open-source chess app for Windows. Analyse with any engine, play rated games, and run engine tournaments, in 2D or 3D.</p>
+      <div class="actions">
+        <a class="btn" href="https://github.com/CodeAdopter/Snail-Chess-Gui/releases">Download for Windows</a>
+        <a class="btn btn-quiet" href="https://github.com/CodeAdopter/Snail-Chess-Gui">Source on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rooms" data-rooms>
+    <div class="rooms-pick" role="radiogroup" aria-label="Room for the 3D board">
+      <button type="button" role="radio" aria-checked="true" data-room="0">Library</button>
+      <button type="button" role="radio" aria-checked="false" data-room="1">Park</button>
+      <button type="button" role="radio" aria-checked="false" data-room="2">Room</button>
+      <button type="button" role="radio" aria-checked="false" data-room="3">Mars</button>
+      <button type="button" role="radio" aria-checked="false" data-room="4">Empty</button>
+      <p class="rooms-caption" aria-live="polite" data-room-caption>Walnut board, boxwood pieces.</p>
+    </div>
+    <figure class="rooms-stage window">
+      <img class="is-on" src="/img/shots/3d-library-1400.webp" srcset="/img/shots/3d-library-800.webp 800w, /img/shots/3d-library-1400.webp 1400w, /img/shots/3d-library-2400.webp 2400w" sizes="(min-width: 1320px) 1240px, 94vw" width="2400" height="1500" alt="The 3D board in the library, with engine arrows arcing over the pieces and the analysis panel beside it." fetchpriority="high">
+      <img data-src="3d-park" width="2400" height="1500" alt="The 3D board outdoors in a park, on marble." loading="lazy">
+      <img data-src="3d-room" width="2400" height="1500" alt="An old computer on a desk under a lamp, playing the game on its screen." loading="lazy">
+      <img data-src="3d-mars" width="2400" height="1500" alt="Folded paper pieces on an ebony board, on Mars." loading="lazy">
+      <img data-src="3d-goo" width="2400" height="1500" alt="Goo pieces on an etched glass board in an empty room." loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<section class="section split" id="analysis">
+  <div class="split-text">
+    <h2>See what the engine sees</h2>
+    <p class="lead">Paste a game or drag the pieces, then turn on the engine. Up to eight lines update live, with arrows on the board.</p>
+    <dl class="facts">
+      <div><dt>Game review</dt><dd>Accuracy and mistakes for both sides, with an evaluation graph.</dd></div>
+      <div><dt>Opening names</dt><dd>The ECO code and name of every position.</dd></div>
+      <div><dt>Engine log</dt><dd>Every line to and from the engine.</dd></div>
+      <div><dt>Board editor</dt><dd>Set up any position.</dd></div>
+    </dl>
+  </div>
+  <div class="split-media">
+    <figure class="window">
+      <img src="/img/shots/analysis-review-1400.webp" srcset="/img/shots/analysis-review-800.webp 800w, /img/shots/analysis-review-1400.webp 1400w, /img/shots/analysis-review-2400.webp 2400w" sizes="(min-width: 1100px) 760px, 94vw" width="2400" height="1500" alt="Stockfish 19 analysing Kasparov against Topalov, with three lines, arrows, and a game review." loading="lazy">
+      <figcaption>Kasparov–Topalov, 1999. Stockfish finds 24.Rxd4 at once.</figcaption>
+    </figure>
+    <div class="pair">
+      <figure class="window">
+        <img src="/img/shots/immortal-arrows-800.webp" srcset="/img/shots/immortal-arrows-800.webp 800w, /img/shots/immortal-arrows-1400.webp 1400w" sizes="(min-width: 1100px) 370px, 46vw" width="2400" height="1500" alt="The Immortal Game with engine arrows, in the After hours theme." loading="lazy">
+        <figcaption>Best move and expected reply.</figcaption>
+      </figure>
+      <figure class="window">
+        <img src="/img/shots/analysis-log-800.webp" srcset="/img/shots/analysis-log-800.webp 800w, /img/shots/analysis-log-1400.webp 1400w" sizes="(min-width: 1100px) 370px, 46vw" width="2400" height="1500" alt="The engine log open over the board." loading="lazy">
+        <figcaption>The engine log.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="looks">
+  <div class="section-head">
+    <h2>Twelve piece sets, nineteen boards</h2>
+    <p class="lead">Try them on Kasparov–Topalov.</p>
+  </div>
+
+  <div class="studio" data-studio>
+    <div class="studio-board">
+      <div class="board" data-board role="img" aria-label="Chess board"></div>
+      <div class="stepper">
+        <button type="button" class="step" data-step="first" aria-label="First move"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5v14M18 5l-8 7 8 7"/></svg></button>
+        <button type="button" class="step" data-step="back" aria-label="Previous move"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <output class="step-now" data-now aria-live="polite">24. Rxd4</output>
+        <button type="button" class="step" data-step="next" aria-label="Next move"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        <button type="button" class="step" data-step="last" aria-label="Last move"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 5v14M6 5l8 7-8 7"/></svg></button>
+      </div>
+    </div>
+
+    <div class="studio-side">
+      <fieldset class="picker">
+        <legend>Pieces</legend>
+        <div class="sets" data-sets></div>
+      </fieldset>
+      <fieldset class="picker">
+        <legend>Board</legend>
+        <div class="palettes" data-palettes></div>
+      </fieldset>
+      <ol class="movelist" data-moves aria-label="Moves of the game"></ol>
+    </div>
+  </div>
+  <p class="note">In the app, wood, stone and glass boards are fully textured.</p>
+
+  <div class="themes">
+    <h3>Six themes, eight accents, four fonts</h3>
+    <ul class="strip" aria-label="Themes">
+      <li><figure class="window"><img src="/img/shots/analysis-porcelain-800.webp" srcset="/img/shots/analysis-porcelain-800.webp 800w, /img/shots/analysis-porcelain-1400.webp 1400w" sizes="(min-width: 900px) 560px, 84vw" width="2400" height="1500" alt="The Porcelain theme." loading="lazy"><figcaption>Porcelain</figcaption></figure></li>
+      <li><figure class="window"><img src="/img/shots/backdrop-concrete-800.webp" srcset="/img/shots/backdrop-concrete-800.webp 800w, /img/shots/backdrop-concrete-1400.webp 1400w" sizes="(min-width: 900px) 560px, 84vw" width="2400" height="1500" alt="The Charcoal theme with a lapis board." loading="lazy"><figcaption>Charcoal</figcaption></figure></li>
+      <li><figure class="window"><img src="/img/shots/theme-after-hours-800.webp" srcset="/img/shots/theme-after-hours-800.webp 800w, /img/shots/theme-after-hours-1400.webp 1400w" sizes="(min-width: 900px) 560px, 84vw" width="2400" height="1500" alt="The After hours theme with an onyx board." loading="lazy"><figcaption>After hours</figcaption></figure></li>
+      <li><figure class="window"><img src="/img/shots/theme-goo-800.webp" srcset="/img/shots/theme-goo-800.webp 800w, /img/shots/theme-goo-1400.webp 1400w" sizes="(min-width: 900px) 560px, 84vw" width="2400" height="1500" alt="The Goo theme, with a glossy green board." loading="lazy"><figcaption>Goo</figcaption></figure></li>
+      <li><figure class="window"><img src="/img/shots/theme-paper-800.webp" srcset="/img/shots/theme-paper-800.webp 800w, /img/shots/theme-paper-1400.webp 1400w" sizes="(min-width: 900px) 560px, 84vw" width="2400" height="1500" alt="The Paper theme, with a folded paper board." loading="lazy"><figcaption>Paper</figcaption></figure></li>
+      <li><figure class="window"><img src="/img/shots/theme-circuit-800.webp" srcset="/img/shots/theme-circuit-800.webp 800w, /img/shots/theme-circuit-1400.webp 1400w" sizes="(min-width: 900px) 560px, 84vw" width="2400" height="1500" alt="The Circuit theme, with a glowing circuit board." loading="lazy"><figcaption>Circuit</figcaption></figure></li>
+    </ul>
+  </div>
+
+  <div class="extras">
+    <div class="extras-item">
+      <h3>Backgrounds</h3>
+      <p>Six built in, or your own colours or picture.</p>
+      <figure class="window"><img src="/img/shots/backdrop-clouds-800.webp" srcset="/img/shots/backdrop-clouds-800.webp 800w, /img/shots/backdrop-clouds-1400.webp 1400w" sizes="(min-width: 900px) 600px, 94vw" width="2400" height="1500" alt="A marble board floating on the Above the clouds background." loading="lazy"></figure>
+    </div>
+    <div class="extras-item">
+      <h3>Holiday costumes</h3>
+      <p>For any piece set.</p>
+      <div class="costumes">
+        <figure><img src="/img/crops/costume-halloween.webp" width="720" height="720" alt="Pieces in witch hats, with pumpkin kings." loading="lazy"><figcaption>Halloween</figcaption></figure>
+        <figure><img src="/img/crops/costume-christmas.webp" width="720" height="720" alt="Pieces in Santa hats." loading="lazy"><figcaption>Christmas</figcaption></figure>
+        <figure><img src="/img/crops/costume-party.webp" width="720" height="720" alt="Pieces in party hats." loading="lazy"><figcaption>Party</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section effects" id="effects">
+  <div class="effects-media">
+    <figure class="effects-board">
+      <img src="/img/crops/effects.webp" width="1100" height="1100" alt="Moss on pawns that never moved, and red flames around the black king in check." loading="lazy">
+      <figcaption>Moss and check flames, after 33.c3+.</figcaption>
+    </figure>
+  </div>
+  <div class="effects-text">
+    <h2>Pieces that remember the game</h2>
+    <p class="lead">Pieces that capture well catch fire. Pieces left standing grow moss.</p>
+    <dl class="effect-list">
+      <div><dt>Fire</dt><dd>On a piece that has captured more than it's worth</dd></div>
+      <div><dt>Moss</dt><dd>On a piece that hasn't moved for 12 moves</dd></div>
+      <div><dt>Check flames</dt><dd>Around a king in check</dd></div>
+      <div><dt>Sacrifice glow</dt><dd>Turns gold when the engine agrees</dd></div>
+      <div><dt>Embers</dt><dd>Captured pieces burn away</dd></div>
+      <div><dt>Trails and dust</dt><dd>Behind and under every move</dd></div>
+      <div><dt>Streaks</dt><dd>Fire and frost on tournament standings</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section" id="three-d">
+  <div class="section-head">
+    <h2>A board with some weight to it</h2>
+    <p class="lead">Switch any tab to 3D. Arrows arc over the pieces, and you can drag to turn the table.</p>
+  </div>
+  <div class="mosaic">
+    <figure class="window mosaic-main"><img src="/img/shots/play-3d-1400.webp" srcset="/img/shots/play-3d-800.webp 800w, /img/shots/play-3d-1400.webp 1400w, /img/shots/play-3d-2400.webp 2400w" sizes="(min-width: 1100px) 820px, 94vw" width="2400" height="1500" alt="Playing Black against the engine on the 3D board in the library." loading="lazy"><figcaption>Playing Black in the library.</figcaption></figure>
+    <figure class="window"><img src="/img/shots/3d-metal-800.webp" srcset="/img/shots/3d-metal-800.webp 800w, /img/shots/3d-metal-1400.webp 1400w" sizes="(min-width: 1100px) 400px, 94vw" width="2400" height="1500" alt="Brass and pewter pieces on a green and white roll-up mat." loading="lazy"><figcaption>Brass and pewter on a roll-up mat.</figcaption></figure>
+    <figure class="window"><img src="/img/shots/3d-mars-800.webp" srcset="/img/shots/3d-mars-800.webp 800w, /img/shots/3d-mars-1400.webp 1400w" sizes="(min-width: 1100px) 400px, 94vw" width="2400" height="1500" alt="Folded paper pieces on Mars." loading="lazy"><figcaption>Folded paper on Mars.</figcaption></figure>
+  </div>
+  <dl class="spec">
+    <div><dt>Boards</dt><dd>Walnut, ebony, marble, etched glass, burl, roll-up mat</dd></div>
+    <div><dt>Pieces</dt><dd>Boxwood, marble, crystal, brass and pewter, Goo, folded paper</dd></div>
+    <div><dt>Rooms</dt><dd>Empty, Library, Park, Room, Mars</dd></div>
+    <div><dt>On the table</dt><dd>Three clocks, nameplates, felt in four colours</dd></div>
+    <div><dt>Graphics</dt><dd>Low to Ultra, up to 8× anti-aliasing</dd></div>
+  </dl>
+</section>
+
+<section class="section split split-flip" id="play">
+  <div class="split-text">
+    <h2>Play the snails</h2>
+    <p class="lead">Quick match finds an opponent near your rating, from 800 to 2800. Bullet, blitz, rapid and classical each keep their own rating.</p>
+    <div class="opponents" aria-label="Quick match opponents">
+      <div class="opp-group">
+        <h3>Balanced</h3>
+        <ul class="plates plates-cream"><li>Shelly</li><li>Escargot</li><li>Garden Gary</li><li>Professor Slime</li><li>Pebble</li><li>Moss</li><li>Dewdrop</li><li>Clover</li></ul>
+      </div>
+      <div class="opp-group">
+        <h3>Aggressive</h3>
+        <ul class="plates plates-oxblood"><li>Turbo Shell</li><li>Gambit Gus</li><li>Spike</li><li>Rook Rocket</li><li>Firebrand</li><li>Blitz Slug</li><li>Scorch</li><li>Viper</li></ul>
+      </div>
+      <div class="opp-group">
+        <h3>Passive</h3>
+        <ul class="plates plates-slate"><li>The Fortress</li><li>Hedgehog</li><li>Stonewall</li><li>Quiet Shell</li><li>Tortoise</li><li>Barnacle</li><li>Bunker</li><li>Old Oak</li></ul>
+      </div>
+    </div>
+    <dl class="facts">
+      <div><dt>Custom games</dt><dd>Any engine, colour, clock and strength.</dd></div>
+      <div><dt>Premoves and sounds</dt><dd>Queue moves while the engine thinks.</dd></div>
+      <div><dt>Lichess</dt><dd>Rated games on Lichess, in the same window.</dd></div>
+    </dl>
+  </div>
+  <div class="split-media">
+    <figure class="window"><img src="/img/shots/newtab-1400.webp" srcset="/img/shots/newtab-800.webp 800w, /img/shots/newtab-1400.webp 1400w, /img/shots/newtab-2400.webp 2400w" sizes="(min-width: 1100px) 760px, 94vw" width="2400" height="1500" alt="The new tab page, with quick match, a rating for each speed, and recent games." loading="lazy"><figcaption>The new tab page.</figcaption></figure>
+    <div class="pair">
+      <figure class="window"><img src="/img/shots/quick-match-800.webp" srcset="/img/shots/quick-match-800.webp 800w, /img/shots/quick-match-1400.webp 1400w" sizes="(min-width: 1100px) 370px, 46vw" width="2400" height="1500" alt="A classical game against Shelly." loading="lazy"><figcaption>Against Shelly.</figcaption></figure>
+      <figure class="window"><img src="/img/shots/profile-overview-800.webp" srcset="/img/shots/profile-overview-800.webp 800w, /img/shots/profile-overview-1400.webp 1400w" sizes="(min-width: 1100px) 370px, 46vw" width="2400" height="1500" alt="The profile, with ratings and results." loading="lazy"><figcaption>Your profile.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="night" id="engine-room">
+  <div class="night-inner">
+    <div class="section-head">
+      <h2>The engine room</h2>
+      <p class="lead">For people who test engines, or just like watching them fight.</p>
+    </div>
+
+    <article class="room-row">
+      <div class="room-text">
+        <h3>Tournaments</h3>
+        <p>Round robins, gauntlets and matches, several games at once. Every pairing plays the same openings, with colours reversed.</p>
+        <ul class="ticks">
+          <li>Any clock, depth or node limit</li>
+          <li>Win and draw adjudication</li>
+          <li>Live graphs of eval, speed, depth, time and CPU</li>
+          <li>Full PGN and UCI logs</li>
+        </ul>
+      </div>
+      <div class="room-media">
+        <figure class="window"><img src="/img/shots/event-standings-1400.webp" srcset="/img/shots/event-standings-800.webp 800w, /img/shots/event-standings-1400.webp 1400w, /img/shots/event-standings-2400.webp 2400w" sizes="(min-width: 1100px) 720px, 94vw" width="2400" height="1500" alt="Standings of an eight-engine Stockfish tournament." loading="lazy"><figcaption>Eight Stockfish versions, round robin.</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="room-row room-row-flip">
+      <div class="room-text">
+        <h3>Live boards</h3>
+        <p>Depth, speed, hash and clocks for both engines, on every board.</p>
+      </div>
+      <div class="room-media">
+        <figure class="window"><img src="/img/shots/event-live-1400.webp" srcset="/img/shots/event-live-800.webp 800w, /img/shots/event-live-1400.webp 1400w, /img/shots/event-live-2400.webp 2400w" sizes="(min-width: 1100px) 720px, 94vw" width="2400" height="1500" alt="A live tournament game, with depth, speed, hash and clocks for both engines." loading="lazy"></figure>
+      </div>
+    </article>
+
+    <article class="room-row">
+      <div class="room-text">
+        <h3>Engine registry</h3>
+        <p>Install engines from inside the app. It picks the right build for your CPU and tells you when there's an update.</p>
+        <ul class="ticks">
+          <li>CCRL ratings and a GitHub trust score</li>
+          <li>Profiles for different settings</li>
+          <li>Crashed engines never linger</li>
+        </ul>
+      </div>
+      <div class="room-media">
+        <figure class="window"><img src="/img/shots/registry-1400.webp" srcset="/img/shots/registry-800.webp 800w, /img/shots/registry-1400.webp 1400w, /img/shots/registry-2400.webp 2400w" sizes="(min-width: 1100px) 720px, 94vw" width="2400" height="1500" alt="The engine registry." loading="lazy"></figure>
+      </div>
+    </article>
+
+    <article class="room-row room-row-flip">
+      <div class="room-text">
+        <h3>Opening books</h3>
+        <p>Import Polyglot, PGN or EPD, download one, or have your engines build one together. A line is kept only if every engine agrees.</p>
+      </div>
+      <div class="room-media">
+        <figure class="window"><img src="/img/shots/books-1400.webp" srcset="/img/shots/books-800.webp 800w, /img/shots/books-1400.webp 1400w, /img/shots/books-2400.webp 2400w" sizes="(min-width: 1100px) 720px, 94vw" width="2400" height="1500" alt="The opening books page." loading="lazy"></figure>
+      </div>
+    </article>
+
+    <article class="room-row">
+      <div class="room-text">
+        <h3>fastchess and SPRT</h3>
+        <p>Start SPRT tests from any terminal and watch them live, with LLR, Elo and LOS as games finish.</p>
+      </div>
+      <div class="room-media">
+        <figure class="window"><img src="/img/shots/profile-fastchess-1400.webp" srcset="/img/shots/profile-fastchess-800.webp 800w, /img/shots/profile-fastchess-1400.webp 1400w, /img/shots/profile-fastchess-2400.webp 2400w" sizes="(min-width: 1100px) 720px, 94vw" width="2400" height="1500" alt="A list of fastchess runs and SPRT tests." loading="lazy"></figure>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section built" id="built">
+  <div class="section-head">
+    <h2>Built from scratch, in Snail</h2>
+    <p class="lead">Written in Snail, its author's own language. No browser inside.</p>
+  </div>
+  <dl class="facts facts-wide">
+    <div><dt>Drawn on the GPU</dt><dd>Sharp at any size and zoom.</dd></div>
+    <div><dt>Idle when you are</dt><dd>When nothing moves, nothing is drawn.</dd></div>
+    <div><dt>Tabs come back</dt><dd>Pick up where you left off.</dd></div>
+    <div><dt>Engine included</dt><dd>Snail Chess 1.19 ships with it.</dd></div>
+  </dl>
+</section>
+
+<section class="section" id="gallery">
+  <div class="section-head">
+    <h2>Screenshots</h2>
+  </div>
+  <div class="filters" role="toolbar" aria-label="Filter screenshots" data-filters></div>
+  <ul class="gallery" data-gallery></ul>
+  <button type="button" class="btn btn-quiet more" data-more hidden></button>
+</section>
+
+<section class="download" id="download">
+  <svg class="download-spiral" viewBox="0 0 23.6 23.6" aria-hidden="true"><path d="M11.3 12.97 C11.3 11.57 12.6 10.77 13.7 11.37 C15.3 12.17 15.3 14.67 13.7 15.87 C11.6 17.37 8.5 16.47 7.6 13.97 C6.5 10.87 8.7 7.67 12 7.27 C16.1 6.77 19.4 10.17 19.2 14.17 C19 18.77 14.8 22.07 10.2 21.57 C5.1 21.07 1.3 17.07 1.3 12.27 C1.3 6.57 5.9 1.97 11.6 1.97 C17.5 1.97 22.3 6.87 22.3 12.87"/></svg>
+  <h2>Get Snail Chess GUI</h2>
+  <p class="lead">Free and open source, for Windows.</p>
+  <div class="actions">
+    <a class="btn" href="https://github.com/CodeAdopter/Snail-Chess-Gui/releases">Download from GitHub</a>
+    <a class="btn btn-quiet" href="https://github.com/CodeAdopter/Snail-Chess">The Snail Chess engine</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>Classic pieces by Colin M.L. Burnett (BSD). Other piece sets CC0. Opening names from Lichess.</p>
+  <p><a href="https://github.com/CodeAdopter/Snail-Chess-Gui">GitHub</a></p>
+</footer>
+
+<dialog class="lightbox" data-lightbox aria-label="Screenshot">
+  <figure>
+    <img data-lightbox-img alt="">
+    <figcaption data-lightbox-caption></figcaption>
+  </figure>
+  <button type="button" class="lb-btn lb-close" data-lb="close" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button type="button" class="lb-btn lb-prev" data-lb="prev" aria-label="Previous screenshot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button type="button" class="lb-btn lb-next" data-lb="next" aria-label="Next screenshot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+</dialog>
+
+<script src="/js/game-data.js" defer></script>
+<script src="/js/site.js" defer></script>
+</body>
+</html>

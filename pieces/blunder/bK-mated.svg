@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+<title>Blunder black king, mated</title>
+<g transform="rotate(4 50 90)">
+<path d="M38.40,58.60 C37.40,59.90 33.67,63.73 32.40,66.40 C31.13,69.07 31.07,73.23 30.80,74.60" fill="none" stroke="#110e14" stroke-width="9.72" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.40,58.60 C37.40,59.90 33.67,63.73 32.40,66.40 C31.13,69.07 31.07,73.23 30.80,74.60" fill="none" stroke="#3b3248" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M61.60,58.60 C62.60,59.90 66.33,63.73 67.60,66.40 C68.87,69.07 68.93,73.23 69.20,74.60" fill="none" stroke="#110e14" stroke-width="9.72" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M61.60,58.60 C62.60,59.90 66.33,63.73 67.60,66.40 C68.87,69.07 68.93,73.23 69.20,74.60" fill="none" stroke="#3b3248" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="39.20" cy="89.40" rx="7.60" ry="4.00" fill="#3b3248" stroke="#110e14" stroke-width="3.2" transform="rotate(-8 39.20 89.40)"/>
+<ellipse cx="60.80" cy="89.40" rx="7.60" ry="4.00" fill="#3b3248" stroke="#110e14" stroke-width="3.2" transform="rotate(8 60.80 89.40)"/>
+<path d="M40.68,52.33 C36.62,54.36 36.60,60.44 35.07,64.41 C33.53,68.39 32.28,72.45 31.48,76.19 C30.68,79.94 27.13,84.80 30.25,86.88 C33.38,88.96 43.59,88.63 50.23,88.68 C56.87,88.72 66.96,89.28 70.08,87.16 C73.20,85.04 69.91,79.86 68.94,75.94 C67.97,72.02 65.84,67.60 64.26,63.65 C62.67,59.70 63.35,54.15 59.42,52.27 C55.49,50.38 44.74,50.31 40.68,52.33 Z" fill="#3b3248" stroke="#110e14" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M50,58 L50,86" fill="none" stroke="#efe4ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="46.40" cy="64.00" r="1.30" fill="#efe4ff"/>
+<circle cx="46.40" cy="72.00" r="1.30" fill="#efe4ff"/>
+<circle cx="46.40" cy="80.00" r="1.30" fill="#efe4ff"/>
+<circle cx="30.60" cy="76.40" r="3.40" fill="#3b3248" stroke="#110e14" stroke-width="2.5600000000000005"/>
+<circle cx="69.40" cy="76.40" r="3.40" fill="#3b3248" stroke="#110e14" stroke-width="2.5600000000000005"/>
+<path d="M50.11,25.22 C54.06,25.18 59.24,26.59 61.82,29.18 C64.40,31.77 65.67,37.06 65.59,40.74 C65.50,44.42 63.92,48.96 61.31,51.27 C58.71,53.58 53.69,54.57 49.94,54.62 C46.18,54.68 41.39,53.98 38.77,51.60 C36.16,49.23 34.33,44.05 34.22,40.36 C34.11,36.66 35.47,31.96 38.12,29.44 C40.77,26.91 46.16,25.26 50.11,25.22 Z" fill="#3b3248" stroke="#110e14" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M50.34,24.00 L54.64,16.55 L56.60,23.15 L63.30,21.55 L65.27,28.15 L71.96,26.55 L67.66,34.00 Z" fill="#ffc83d" stroke="#110e14" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M62.26,20.95 L66.26,14.02 L68.34,15.22 L64.34,22.15 Z" fill="#ffc83d" stroke="#110e14" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M63.11,14.28 L69.69,18.08 L68.49,20.16 L61.91,16.36 Z" fill="#ffc83d" stroke="#110e14" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M40.20,35.20 L47.00,42.00 M47.00,35.20 L40.20,42.00" fill="none" stroke="#efe4ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M53.20,35.20 L60.00,42.00 M60.00,35.20 L53.20,42.00" fill="none" stroke="#efe4ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M43.60,48.60 C44.13,48.30 45.73,46.80 46.80,46.80 C47.87,46.80 48.93,48.60 50.00,48.60 C51.07,48.60 52.13,46.80 53.20,46.80 C54.27,46.80 55.87,48.30 56.40,48.60" fill="none" stroke="#efe4ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

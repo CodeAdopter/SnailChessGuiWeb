@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+<title>Blunder white queen</title>
+<style>.bl-smug { transform-origin: 50px 50px; animation: bl-smug 2.4s ease-in-out infinite alternate; }
+@keyframes bl-smug { from { transform: rotate(-2.5deg); } to { transform: rotate(2.5deg); } }
+@media (prefers-reduced-motion: reduce) { [class^="bl-"] { animation: none !important; } }</style>
+<g transform="rotate(3 50 90)">
+<ellipse cx="39.60" cy="89.40" rx="7.60" ry="4.00" fill="#fff3d6" stroke="#1d1a1f" stroke-width="3.2" transform="rotate(-8 39.60 89.40)"/>
+<ellipse cx="60.40" cy="89.40" rx="7.60" ry="4.00" fill="#fff3d6" stroke="#1d1a1f" stroke-width="3.2" transform="rotate(8 60.40 89.40)"/>
+<path d="M40.51,47.21 C36.66,49.39 37.07,55.78 35.49,60.18 C33.91,64.58 32.10,69.13 31.04,73.61 C29.98,78.09 26.03,84.55 29.13,87.06 C32.23,89.56 42.71,88.74 49.65,88.64 C56.59,88.54 67.60,88.89 70.76,86.44 C73.93,83.99 69.71,78.27 68.64,73.95 C67.56,69.62 65.99,64.97 64.31,60.50 C62.64,56.03 62.56,49.33 58.59,47.12 C54.63,44.91 44.36,45.04 40.51,47.21 Z" fill="#fff3d6" stroke="#1d1a1f" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="40.40" cy="54.40" r="1.70" fill="#ffffff" stroke="#1d1a1f" stroke-width="1.2"/>
+<circle cx="43.60" cy="56.00" r="1.70" fill="#ffffff" stroke="#1d1a1f" stroke-width="1.2"/>
+<circle cx="46.80" cy="57.17" r="1.70" fill="#ffffff" stroke="#1d1a1f" stroke-width="1.2"/>
+<circle cx="50.00" cy="57.60" r="1.70" fill="#ffffff" stroke="#1d1a1f" stroke-width="1.2"/>
+<circle cx="53.20" cy="57.17" r="1.70" fill="#ffffff" stroke="#1d1a1f" stroke-width="1.2"/>
+<circle cx="56.40" cy="56.00" r="1.70" fill="#ffffff" stroke="#1d1a1f" stroke-width="1.2"/>
+<circle cx="59.60" cy="54.40" r="1.70" fill="#ffffff" stroke="#1d1a1f" stroke-width="1.2"/>
+<g class="bl-smug">
+<path d="M49.66,22.37 C53.40,22.47 58.75,23.92 61.24,26.32 C63.73,28.72 64.76,33.26 64.60,36.78 C64.44,40.29 62.67,45.03 60.28,47.41 C57.89,49.78 53.70,50.97 50.27,51.02 C46.85,51.07 42.25,50.18 39.76,47.71 C37.26,45.24 35.46,39.87 35.30,36.20 C35.14,32.53 36.41,28.01 38.80,25.70 C41.20,23.40 45.92,22.27 49.66,22.37 Z" fill="#fff3d6" stroke="#1d1a1f" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M37.16,23.97 L39.19,11.13 L41.29,18.70 L45.61,12.14 L47.71,19.71 L52.03,13.16 L54.13,20.73 L58.45,14.18 L60.55,21.75 L64.87,15.19 L62.84,28.03 Z" fill="#ffc83d" stroke="#1d1a1f" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="39.19" cy="11.13" r="2.20" fill="#ffc83d" stroke="#1d1a1f" stroke-width="1.8"/>
+<circle cx="45.61" cy="12.14" r="2.20" fill="#ffc83d" stroke="#1d1a1f" stroke-width="1.8"/>
+<circle cx="52.03" cy="13.16" r="2.20" fill="#ffc83d" stroke="#1d1a1f" stroke-width="1.8"/>
+<circle cx="58.45" cy="14.18" r="2.20" fill="#ffc83d" stroke="#1d1a1f" stroke-width="1.8"/>
+<circle cx="64.87" cy="15.19" r="2.20" fill="#ffc83d" stroke="#1d1a1f" stroke-width="1.8"/>
+<path d="M35.00,32.00 L65.00,32.00 L65.00,35.00 L63.00,35.00 L63.00,38.00 L61.00,38.00 L61.00,40.00 L54.00,40.00 L54.00,38.00 L52.00,38.00 L52.00,35.00 L48.00,35.00 L48.00,38.00 L46.00,38.00 L46.00,40.00 L39.00,40.00 L39.00,38.00 L37.00,38.00 L37.00,35.00 L35.00,35.00 Z" fill="#141216" stroke="#1d1a1f" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="40.0" y="34.6" width="2" height="2" fill="#ffffff"/>
+<rect x="42.0" y="36.6" width="2" height="2" fill="#ffffff"/>
+<rect x="55.0" y="34.6" width="2" height="2" fill="#ffffff"/>
+<rect x="57.0" y="36.6" width="2" height="2" fill="#ffffff"/>
+<path d="M43.41,44.43 C43.41,44.43 47.66,47.38 50.06,47.16 C52.47,46.93 57.83,43.08 57.83,43.08 C57.83,43.08 57.98,45.75 56.68,46.74 C55.38,47.73 52.04,48.96 50.03,49.02 C48.02,49.08 45.70,47.86 44.60,47.09 C43.50,46.33 43.41,44.43 43.41,44.43 Z" fill="#ff5a4f" stroke="#1d1a1f" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+</g>
+</svg>

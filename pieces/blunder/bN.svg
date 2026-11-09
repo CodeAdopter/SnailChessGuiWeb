@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+<title>Blunder black knight</title>
+<style>.bl-tongue { transform-origin: 28px 54.2px; animation: bl-tongue 0.5s ease-in-out infinite alternate; }
+@keyframes bl-tongue { from { transform: rotate(-8deg); } to { transform: rotate(8deg); } }
+@media (prefers-reduced-motion: reduce) { [class^="bl-"] { animation: none !important; } }</style>
+<g transform="rotate(3 50 90)">
+<path d="M48.60,15.20 L54.03,7.03 L58.00,16.00 L67.41,12.36 L66.40,22.40 L76.99,23.68 L72.60,33.40 L82.40,37.83 L75.40,46.00 L84.38,51.43 L76.20,58.00 L70.00,58.00 L52.00,22.00 Z" fill="#9b7bff" stroke="#110e14" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="39.40" cy="89.40" rx="7.60" ry="4.00" fill="#3b3248" stroke="#110e14" stroke-width="3.2" transform="rotate(-8 39.40 89.40)"/>
+<ellipse cx="60.60" cy="89.40" rx="7.60" ry="4.00" fill="#3b3248" stroke="#110e14" stroke-width="3.2" transform="rotate(8 60.60 89.40)"/>
+<path d="M31.95,87.06 C31.95,87.06 32.88,77.86 33.62,73.97 C34.37,70.07 35.46,66.45 36.41,63.69 C37.35,60.93 40.10,58.64 39.28,57.41 C38.47,56.18 34.24,56.69 31.53,56.29 C28.81,55.89 25.48,55.73 22.99,55.00 C20.50,54.27 17.79,53.72 16.59,51.91 C15.39,50.10 15.24,46.32 15.79,44.14 C16.34,41.97 17.89,40.94 19.88,38.86 C21.88,36.79 25.42,34.34 27.75,31.72 C30.08,29.09 32.01,25.71 33.86,23.12 C35.70,20.52 37.36,18.79 38.83,16.16 C40.30,13.53 42.69,7.34 42.69,7.34 C42.69,7.34 45.59,13.66 48.13,15.16 C50.67,16.66 54.89,15.11 57.94,16.34 C60.99,17.57 63.98,19.67 66.42,22.54 C68.86,25.41 71.11,29.69 72.60,33.56 C74.09,37.44 74.61,41.29 75.36,45.78 C76.11,50.27 76.90,55.76 77.10,60.50 C77.29,65.23 77.05,69.84 76.54,74.21 C76.03,78.58 74.02,86.73 74.02,86.73 C74.02,86.73 31.95,87.06 31.95,87.06 Z" fill="#3b3248" stroke="#110e14" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M17.39,50.26 C18.32,49.40 23.20,50.11 25.67,50.46 C28.14,50.80 31.93,51.34 32.20,52.35 C32.48,53.36 29.33,55.98 27.31,56.52 C25.29,57.07 21.73,56.68 20.08,55.64 C18.42,54.60 16.46,51.13 17.39,50.26 Z" fill="#5b1424" stroke="#110e14" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="round"/>
+<g class="bl-tongue">
+<path d="M28.90,53.07 C27.87,52.74 24.88,53.10 23.07,53.34 C21.27,53.58 19.44,53.70 18.07,54.49 C16.71,55.28 15.56,56.80 14.86,58.09 C14.16,59.38 13.67,61.12 13.89,62.25 C14.12,63.38 15.31,64.83 16.21,64.89 C17.12,64.94 18.40,63.65 19.32,62.57 C20.24,61.50 20.72,59.52 21.74,58.44 C22.75,57.37 24.15,56.63 25.41,56.11 C26.66,55.59 28.68,55.85 29.26,55.35 C29.84,54.84 29.93,53.41 28.90,53.07 Z" fill="#ff7c93" stroke="#110e14" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M24.40,55.00 C23.60,55.43 20.77,56.57 19.60,57.60 C18.43,58.63 17.77,60.60 17.40,61.20" fill="none" stroke="#5b1424" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M19.40,50.00 L24.20,50.20 L23.80,54.20 L19.80,53.80 Z" fill="#ffffff" stroke="#110e14" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="20.40" cy="42.60" rx="2.40" ry="1.60" fill="#efe4ff" transform="rotate(-30 20.40 42.60)"/>
+<circle cx="31.60" cy="30.40" r="4.60" fill="#efe4ff" stroke="#110e14" stroke-width="2.0"/>
+<circle cx="32.78" cy="30.99" r="2.58" fill="#141216"/>
+<circle cx="41.80" cy="31.40" r="6.40" fill="#efe4ff" stroke="#110e14" stroke-width="2.0"/>
+<circle cx="39.73" cy="31.81" r="3.58" fill="#141216"/>
+</g>
+</svg>
