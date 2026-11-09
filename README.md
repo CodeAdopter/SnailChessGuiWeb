@@ -11,7 +11,8 @@ A static site, no build step. Deploy the folder to Vercel as is (framework prese
 That writes `img/shots/<name>-800.webp`, `-1400.webp` and `-2400.webp`. The board crops for the costumes and effects
 are set in `CROPS` in the script, and `3d-library` also makes `img/og.jpg`, the link preview image.
 
-New screenshots go in the gallery through the `SHOTS` list in `js/site.js`.
+New screenshots go in the gallery through the `SHOTS` list in `js/site.js`. The hero's rooms are in `ROOMS` and the
+themes band in `THEMES`, in the same file; each theme carries its background, text and accent colours from the app.
 
 `shots-src/` and `tools/` are left out of the deploy by `.vercelignore`.
 
